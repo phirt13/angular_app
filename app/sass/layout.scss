@@ -30,6 +30,7 @@ input {
   @include marginSettings(.5em, auto, .5em, auto);
   display: block;
   box-sizing: border-box;
+  padding: .5em 0;
 
 }
 

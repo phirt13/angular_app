@@ -26,7 +26,7 @@ gulp.task('webpack', function() {
       }
      }))
       .pipe(uglify())
-      .pipe(gulp.dest('public/js/'));
+      .pipe(gulp.dest('./public/js/'));
 });
 
 gulp.task('copy', function() {
@@ -42,5 +42,6 @@ gulp.task('copy', function() {
 });
 
 gulp.task('build', ['sass', 'copy', 'webpack']);
+//include 'copy' 'webpack' for full build of html and JS.
 gulp.task('default', ['build']);
 
